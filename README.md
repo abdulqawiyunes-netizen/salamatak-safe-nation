@@ -1,4 +1,12 @@
-# سلامتك — Safe Nation AI
+> ⚡ **البدء السريع (لإكمال بناء التطبيق بالكامل):** افتح هذا المستودع في Codespace أو محلياً، ثم شغّل أداة AI ذات terminal فعلي (Claude Code موصى بها)، وأعطِ الأداة الأمر التالي:
+> >
+> >> *اقرأ PROMPT.md و BUILD_INSTRUCTIONS.md، ثم نفّذ كل المراحل بالترتيب مع quality gates بعد كل مرحلة، حتى يعمل التطبيق بالكامل بدون أخطاء.*
+> >> >
+> >> >> راجع [PROMPT.md](./PROMPT.md) و [BUILD_INSTRUCTIONS.md](./BUILD_INSTRUCTIONS.md) للتفاصيل الكاملة.
+> >> >>
+> >> >> ---
+> >> >>
+> >> >> # سلامتك — Safe Nation AI
 
 > منصة سعودية للسلامة العامة بدعم من الذكاء الاصطناعي، عربية أولاً (RTL) وثنائية اللغة.
 > > Saudi public-safety platform powered by AI — Arabic-first (RTL), bilingual.

@@ -1,0 +1,36 @@
+{
+    "name": "salamatak-safe-nation",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Salamatak (Safe Nation AI) — Saudi public-safety platform",
+    "packageManager": "pnpm@9.12.0",
+    "engines": { "node": ">=20.0.0", "pnpm": ">=9.0.0" },
+    "scripts": {
+          "dev": "pnpm -r --parallel --filter \"./artifacts/*\" run dev",
+          "build": "pnpm -r run build",
+          "typecheck": "pnpm -r run typecheck",
+          "lint": "eslint . --ext .ts,.tsx,.js,.jsx --max-warnings=0",
+          "format": "prettier --write .",
+          "test": "pnpm -r run test",
+          "db:generate": "pnpm --filter @salamatak/db run generate",
+          "db:migrate": "pnpm --filter @salamatak/db run migrate",
+          "db:seed": "pnpm --filter @salamatak/db run seed",
+          "prepare": "husky || true"
+    },
+    "devDependencies": {
+          "@types/node": "^20.14.0",
+          "@typescript-eslint/eslint-plugin": "^8.7.0",
+          "@typescript-eslint/parser": "^8.7.0",
+          "eslint": "^9.11.0",
+          "eslint-config-prettier": "^9.1.0",
+          "husky": "^9.1.0",
+          "lint-staged": "^15.2.0",
+          "prettier": "^3.3.0",
+          "typescript": "^5.6.0",
+          "vitest": "^2.1.0"
+    },
+    "lint-staged": {
+          "*.{ts,tsx,js,jsx}": ["eslint --fix", "prettier --write"],
+          "*.{json,md,yaml,yml}": ["prettier --write"]
+    }
+}
